@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,46 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sharadha | Frontend Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-  <h2>Sharadha</h2>
+  <h2 class="logo">Sharadha</h2>
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
+<!-- HERO -->
 <section id="home" class="hero">
   <h1>Hello, I’m Sharadha 👋</h1>
   <p>Frontend Developer | UI Enthusiast</p>
+  <a href="Sharadha_Resume.pdf" target="_blank" class="btn">View Resume</a>
 </section>
 
-<section id="about">
-  <img src="photo.jpeg" alt="Profile Photo">
-  <h2>About Me</h2>
-  <p>
-    I am a frontend-focused student with a strong interest in UI design and web development.
-    I enjoy building clean, responsive, and interactive web experiences.
-  </p>
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-container">
 
-</section>
+    <div class="about-img">
+      <img src="profile.jpg" alt="Sharadha Profile">
+    </div>
 
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="grid">
-    <img src="https://picsum.photos/300?1" />
-    <img src="https://picsum.photos/300?2" />
-    <img src="https://picsum.photos/300?3" />
-    <img src="https://picsum.photos/300?4" />
-    <img src="https://picsum.photos/300?5" />
-    <img src="https://picsum.photos/300?6" />
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I’m a Computer Science (Data Science) undergraduate with a strong interest
+        in UI design and frontend development. I enjoy building clean,
+        user-friendly interfaces and combining data insights with thoughtful design.
+      </p>
+
+      <ul class="about-points">
+        <li>🎓 CSE (Data Science)</li>
+        <li>💻 Frontend & UI Enthusiast</li>
+        <li>🌐 Languages Known: English, Telugu, Kannada</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-box">
+      <h3>Programming</h3>
+      <p>Python, SQL, Java (Basics)</p>
+    </div>
+
+    <div class="skill-box">
+      <h3>Web Technologies</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="skill-box">
+      <h3>Data Tools</h3>
+      <p>Tableau, Power BI, Excel, Matplotlib</p>
+    </div>
+
+    <div class="skill-box">
+      <h3>Libraries & Frameworks</h3>
+      <p>Pandas, NumPy</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="grid">
+    <img src="https://picsum.photos/300?1" alt="Gallery image 1" />
+    <img src="https://picsum.photos/300?2" alt="Gallery image 2" />
+    <img src="https://picsum.photos/300?3" alt="Gallery image 3" />
+    <img src="https://picsum.photos/300?4" alt="Gallery image 4" />
+    <img src="https://picsum.photos/300?5" alt="Gallery image 5" />
+    <img src="https://picsum.photos/300?6" alt="Gallery image 6" />
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: sharadhakattalingannagari@email.com</p>
@@ -55,7 +105,6 @@
       href="https://www.linkedin.com/in/sharadha-kattalingannagari-992a4730a"
       target="_blank"
       rel="noopener noreferrer"
-      style="color: #0a66c2; text-decoration: none;"
     >
       Visit my LinkedIn
     </a>
@@ -66,14 +115,11 @@
       href="https://github.com/sharadha-k19"
       target="_blank"
       rel="noopener noreferrer"
-      style="color: #0a66c2; text-decoration: none;"
     >
-      
       Visit my GitHub
     </a>
   </p>
 </section>
 
-<script src="script.js"></script>
 </body>
-</html>    
+</html>
